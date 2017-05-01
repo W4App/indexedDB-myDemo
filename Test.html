@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="indexedDB.js"></script>
+    <script src="test.js"></script>
+</head>
+<body>
+<ul>
+    <li style="" >Item:
+        <select onchange="selItem(this,1)">
+        <option value="题目1">题目1</option>
+        <option value="题目2">题目2</option>
+        <option value="题目3">题目3</option>
+        </select>
+    </li>
+    <li style="">Answers:
+        <select onchange="selItem(this,2)">
+        <option value="答案1">答案1</option>
+        <option value="答案2">答案2</option>
+        <option value="答案3">答案3</option>
+        </select>
+    </li>
+    <li style="">Date:
+        <select onchange="selItem(this,3)">
+        <option value="时间1">时间1</option>
+        <option value="时间2">时间2</option>
+        <option value="时间3">时间3</option>
+        </select>
+    </li>
+    <p onclick="pClick(this)">选择</p>
+</ul>
+<ul>
+    <li><input type="button" value="init" onclick="init()"></li>
+    <li><input type="button" value="open" onclick="openDB()"></li>
+    <li><input type="button" value="save" onclick="save()"></li>
+    <li><input type="button" value="getAll" onclick="getAll()"></li>
+    <li><input type="button" value="getOne" onclick="get()"></li>
+    <li><input type="button" value="delOne" onclick="delOne()"></li>
+    <li><input type="button" value="delAll" onclick="delAll()"></li>
+    <li><input type="button" value="delDBase" onclick="delDBase()"></li>
+</ul>
+</body>
+</html>
